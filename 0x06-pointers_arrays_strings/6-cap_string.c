@@ -1,14 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
+int check_seperators(char c);
+
 /**
  * cap_string - a function that capitalizes all words of a string.
  * @s: An input string to capitalize letters
  * Return: pointer to s
  */
-
-
-int check_seperators(char c);
 
 char *cap_string(char *s)
 {
@@ -29,12 +28,20 @@ char *cap_string(char *s)
 
 	return (s);
 }
+
+/*
+ * check_seperators - function
+ *
+ * Return (1)
+ *
+ */
+
 int check_seperators(char c)
 {
 	int i = 0;
 	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?',
 		'"', '(', ')', '{', '}' };
-	for (; i < 13; i++)
+	for  (i = 0; i < 13; i++)
 	{
 		if (c == seperators[i])
 		{	
