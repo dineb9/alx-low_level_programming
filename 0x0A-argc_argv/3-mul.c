@@ -8,7 +8,7 @@
  */
 int main(int argc, char **argv)
 {
-	int a, b, r;
+	int num1, num2, result;
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -16,10 +16,10 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		r = a * b;
-		printf("%d\n", r);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		result = num1 * num2;
+		printf("%d\n", result);
 		return (0);
 	}
 }
