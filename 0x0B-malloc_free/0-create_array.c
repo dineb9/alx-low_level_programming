@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 #include <stdlib.h>
 /**
  * create_array - writes the character c to stdout
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	s = malloc(sizeof(char) * size);
-	if (q == NULL)
+	if (s == NULL)
 	{
 		return (NULL);
 	}
